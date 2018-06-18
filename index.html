@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script type="text/javascript" src="js/echarts.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="item.js"></script>
+	<script type="text/javascript" src="radar.js"></script>
+	<script type="text/javascript" src="dmflow.js"></script>
+	<script type="text/javascript" src="image.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			//饼状图
+			mainEcharts.mainFunction();
+		});
+	</script>
+</head>
+<body>
+	<h1 align="center";style="color:red;font-size:20px">b站视频信息可视化分析</h1>
+	<h2 align="right";style="color:red;font-size:10px">by:刘思娅、孟飞妤、秦壹民、聂壮</h2>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="mainDiv" style="width: 100%;height:500px; float:left;"></div>
+	<div id="itemDiv" style="width: 50%;height:300px; float:left;"></div>
+	<div id="radarDiv" style="width: 50%;height:300px; float:left;"></div>
+	<div id="danmuku_density_chart" style="width: 50%;height:300px;float:left;"></div>
+	<img id="imgPre" src="" ; style="width:40%; height:300px;float:left;display: block;" />
+</body>
+</html>
