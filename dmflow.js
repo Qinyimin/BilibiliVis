@@ -57,7 +57,7 @@ dmflowEcharts={
                 var d=data.data;
                 $.each(d, function(index, p) {
                     if(n == p.name) {
-                        dmflowEcharts.dmflow(p.value, p.name,n);
+                        dmflowEcharts.dmflow(p.time,p.value, p.name,n);
                     }
                 })
             },
@@ -66,7 +66,7 @@ dmflowEcharts={
             }
         });
     },
-    "dmflow" :function(valueArr,nameArr, n) {
+    "dmflow" :function(timeArr,valueArr,nameArr, n) {
         var myDMflow=echarts.init(document.getElementById("danmuku_density_chart"));
 
         option = {
@@ -78,7 +78,7 @@ dmflowEcharts={
                 data:['弹幕']
             },
             xAxis: {
-                data: []
+                data: timeArr
             },
             yAxis: {},
             series: [{

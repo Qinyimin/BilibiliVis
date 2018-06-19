@@ -861,12 +861,12 @@ itemEcharts={
             //     parallelAxisIndex: [0]
             // },
             parallelAxis: [
-                {dim: 0, name: schema[0].text},
-                {dim: 1, name: schema[1].text},
-                {dim: 2, name: schema[2].text},
-                {dim: 3, name: schema[3].text},
-                {dim: 4, name: schema[4].text},
-                {dim: 5, name: schema[5].text},
+                {dim: 0, name: schema[0].text,max:2725692},
+                {dim: 1, name: schema[1].text,max:167271},
+                {dim: 2, name: schema[2].text,max:45579},
+                {dim: 3, name: schema[3].text,max:98313},
+                {dim: 4, name: schema[4].text,max:270340},
+                {dim: 5, name: schema[5].text,max:47340},
                 //   {dim: 6, name: schema[6].text},
                 //  {dim: 7, name: schema[7].text,
                 //   type: 'category', data: ['优', '良', '轻度污染', '中度污染', '重度污染', '严重污染']}
@@ -920,36 +920,42 @@ itemEcharts={
                     type: 'parallel',
                     lineStyle: lineStyle,
                     data: d1
+
                 },
                 {
                     name: n2,
                     type: 'parallel',
                     lineStyle: lineStyle,
                     data: d2
+
                 },
                 {
                     name: n3,
                     type: 'parallel',
                     lineStyle: lineStyle,
                     data: d3
+
                 },
                 {
                     name: n4,
                     type: 'parallel',
                     lineStyle: lineStyle,
                     data: d4
+
                 },
                 {
                     name: n5,
                     type: 'parallel',
                     lineStyle: lineStyle,
                     data: d5
+
                 },
                 {
                     name: n6,
                     type: 'parallel',
                     lineStyle: lineStyle,
                     data: d6
+
                 },
                 {
                     name: n7,
